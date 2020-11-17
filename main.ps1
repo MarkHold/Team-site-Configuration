@@ -1,3 +1,2 @@
-﻿#first commit
-$strString = "hello world"
-Write-Host $strString
+﻿#login
+$cred = Get-Credential
