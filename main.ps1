@@ -1,4 +1,6 @@
-﻿Connect-PnPOnline "https://[tenant].sharepoint.com/"
+﻿$siteUrl = "https://omniademox.sharepoint.com/"
+
+Connect-PnPOnline -Url $siteUrl –UseWebLogin
 
 # Create the new "modern" team site
 $teamSiteUrl = New-PnPSite -Type TeamSite -Title "MarkusSite" -Alias "mymodernteamsite" -Description "description" -IsPublic -Classification "classification" 
